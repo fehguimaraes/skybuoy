@@ -16,7 +16,7 @@ def fetch_metar(station, period):
 
 # This function indexes the fetched METAR data into an Elasticsearch index.
 def index_metar(metar_json, es_index, es_host, es_port, api_key=elasticsearch_api_key):
-    es = Elasticsearch([{'host': es_host, 'port': es_port, 'scheme': 'https'}], api_key=api_key)
+    es = Elasticsearch([{'host': es_host, 'port': es_port, 'scheme': 'https', }], api_key=api_key)
     for record in metar_json:
         es.index(index=es_index, body=record)
 
@@ -24,7 +24,7 @@ def index_metar(metar_json, es_index, es_host, es_port, api_key=elasticsearch_ap
 if __name__ == "__main__":
     station = 'SBGL'  # Change to desired airport code
     period = 1
-    es_index = 'skybuoy-metar-test-00001'
+    es_index = 'ds-skybuoy-metar-000001'
     es_host = getenv("ELASTICSEARCH_ENDPOINT")
     es_port = 443
     metar_json = fetch_metar(station, period)
