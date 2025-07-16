@@ -1,8 +1,8 @@
 # 🛰️ SkyBuoy
 
-**SkyBuoy** is a small Python service that fetches METAR weather data from the [AviationWeather API](https://aviationweather.gov/data/api/) and indexes it into Elasticsearch. Think of it as a floating weather buoy — but in the sky.
+**SkyBuoy** is a small Python service that fetches METAR weather data from the [AviationWeather API](https://aviationweather.gov/data/api/) and indexes it into Elasticsearch. Think of it as a floating weather buoy, but in the sky.
 
-> ✨ Created by Fernanda — a trans woman with a deep love for aviation, the ocean, and technology. This project is part of my personal journey learning how to code.
+✨ Created by Fernanda, a trans woman with a deep love for aviation, the ocean, and technology. This project is part of my personal journey learning how to code.
 
 ---
 
